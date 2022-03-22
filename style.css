@@ -1,0 +1,238 @@
+*{
+ padding: 0;
+ margin: 0;
+ text-decoration: none;
+ box-sizing: border-box;
+ 
+ }
+
+body{ 
+     font-family:'Times New Roman', Times, serif;
+}
+audio{
+    margin-top: 56%;
+}
+nav{
+    background-color:rgba(0, 0, 0, 0.7);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    Z-INDEX: 1;
+    
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+nav ul{
+      float: right;
+      margin-right: 20px;
+      
+}
+nav ul li {
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 5px;
+      
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px ;
+    border-radius: 3px;
+}
+a.active,a:hover{
+    background: white;
+    color:rgba(0, 0, 0, 0.7);
+    transition: .5s;
+}
+.checkbtn{
+    margin-top: 3%;
+    color: white;
+    font-size: 39px;
+    float: right;
+    line-height: 80px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+#sobre{
+    background-image: url(midia/img.jpg); no-repeat;
+    background-size: cover;
+    height: calc(112vh - 80px);
+}
+#sob{
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 56%;
+    position: absolute;
+    margin-top: 18%;
+    background-size: cover;
+}
+h1{
+    font-size: 350%;
+    font-weight: bold;
+    margin-left: 1%;
+    color: rgb(255, 255, 255);
+}
+#p1{
+    width: 71%;
+    height: 53%;
+    position: absolute;
+    font-size: 139%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 1%;
+    margin-top: 7%;
+    color: rgb(255, 255, 255);
+   
+}
+
+#objetivo{
+    
+    background-size: cover;
+    background-color:rgb(80, 208, 231) ;
+        height: calc(112vh - 80px);
+        
+}
+h2{
+    font-size: 300%;
+    font-style: oblique;
+    margin-left: 5%;
+    margin-top: 3%;
+    color: #ffffff;
+}
+
+P{
+    position: absolute;
+    margin-top: 11%;
+   font-size: 114%;
+   margin-left: 5%;
+   color: white;
+}
+
+#img2{
+    margin-top: 10%;
+}
+    
+
+
+#ob{
+    background: rgba(0, 0, 0, 0.4);
+    width: 50%;
+    height: 65.5%;
+    position: absolute;
+    margin-top: 16%;
+    margin-bottom: -2%;
+    margin-left: 50%;
+    margin-right: 50%;
+    background-size: cover;
+}
+
+
+#contato{
+    background-color: #36568a;
+    background-size: cover;
+    height: calc(112vh - 80px);
+}
+#img3{
+    position: absolute;
+    margin-top: 22%;
+    margin-left: 2%;
+}
+#git{
+    margin-top: 10%;
+    margin-left: 1%;
+    position: absolute;
+}
+
+#link{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 12%;
+}
+
+#email{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 24%;
+}
+
+#p2{
+    position: absolute;
+    margin-top: 13%;
+   font-size: 114%;
+   margin-left: 39%;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+    
+}
+
+#exper{
+    background-color: white;
+    background-size: cover;
+    height: calc(112vh - 80px);
+}
+#imghtml{
+    margin-top: 10%;
+    margin-left: 15%;
+}
+#com{
+    margin-top: 9%;
+    margin-left: 40%;
+}
+#port{
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    height: calc(112vh - 80px);
+}
+
+
+
+@media (max-width: 952px){
+    
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+        nav ul li a{
+        font-size: 16px
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width:100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all: .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082ec;
+    }
+    #check:checked ~ ul{
+        left: 0;
+}
+
